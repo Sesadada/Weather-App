@@ -1,0 +1,320 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(106, 171, 245);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: 100%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+
+h1, h2, .time , h6{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    color: white;
+    margin-left: 2rem;
+    mix-blend-mode:exclusion;
+    text-align: left;
+}
+
+h1{  
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 70px
+}
+
+h2{ margin-top: 0;
+    margin-bottom: 0;
+    font-size: 40px
+}
+
+.time{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+h6{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+
+}
+
+h3, h4, h5{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: 2rem;
+    mix-blend-mode:exclusion;
+    text-align: right;
+}
+
+h5{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+
+
+.dayContainer, .iconContainer {
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: right;
+    height: 30px;
+}
+
+.wIcon {
+    margin-top: 0.3rem;
+    margin-right: 2rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+h3 {
+    padding-top: 3rem;
+}
+
+.cityInput{
+    height: 1rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    border-radius: 10px;
+    border: none;
+    font-size: smaller;
+    padding: 0.5rem;
+}
+
+
+.cityInput::placeholder {
+    color: rgb(4, 72, 75);
+  }
+
+button {
+    margin-top: 3rem;
+    margin-left: 1rem;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    padding: 4px;
+    color: rgb(4, 72, 75);
+  }
+
+  button:hover{
+      background-color: teal;
+      color: white;
+  }
+
+  .containerInfo {
+    margin-top: 3rem;
+      display: flex;
+      justify-content:space-between;
+  }
+
+  .containerInput {
+    margin-top: 3rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .wImage {
+      margin: 0;
+    z-index: -1;
+    width: 100%;
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0))
+}
+
+.generalContainer{
+    padding: 0;
+    margin: 0 auto;
+    float: unset; 
+    height: 100%; 
+    width: 100%;
+}
+.containerPic{
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+    html {
+        height: 100%;
+        overflow: hidden;
+    }
+    body {
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        background-color: rgb(106, 171, 245);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        -webkit-background-size: 100%;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+
+    h1, h2, .time , h6{
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        color: white;
+        margin-left: 1rem;
+        mix-blend-mode:exclusion;
+        text-align: left;
+    }
+    h1{  
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 40px
+    }
+    
+    h2{ margin-top: 0;
+        margin-bottom: 0;
+        font-size: 20px
+    }
+    
+    .time{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+
+    }
+
+    h6{
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 10px;
+        font-weight: 600;
+        font-size: 15px;
+        letter-spacing: 0px;
+        margin-bottom: 0;
+    
+    }
+    
+    h3, h4, h5{
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        color: white;
+        font-weight: 700;
+        font-size: 10px;
+        margin-left: 1rem;
+        mix-blend-mode:exclusion;
+        text-align: left;
+    }
+    h3 {
+        padding-top: 0rem;
+    }
+    
+    h5{ font-variant:small-caps;
+        font-style: oblique;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-transform: capitalize;
+    }
+    .container1{
+        margin-top: 2rem;
+    }
+    .container2 {
+        margin-top: 6rem;
+        margin-left: 0;
+        width: 50%;
+        text-align: left;
+    }
+
+.wIcon {
+    display: none;
+}
+
+    .cityInput{
+        margin-left: 0rem;
+
+        height: 0.5rem;
+        margin-top: 3rem;
+        border-radius: 10px;
+        border: none;
+        font-size: smaller;
+    }
+    
+    
+    .cityInput::placeholder {
+        color: rgb(4, 72, 75);
+      }
+    
+    button {
+        font-size: 10px;
+        margin-top: 3rem;
+        margin-left: 0.3rem;
+        width: 3rem;
+        height: 1.5rem;
+        border-radius: 10px;
+        border: none;
+        padding: 0rem;
+        color: rgb(4, 72, 75);
+      }
+    
+      button:hover{
+          background-color: teal;
+          color: white;
+      }
+
+      .containerInfo, .iconContainer{
+        display:unset;
+         
+      }
+      
+    
+      .containerInput {
+        margin-top: 0rem;
+      
+      }
+    
+      .wImage {
+        margin-bottom: 0;
+        width: 100%;
+        -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+        mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0))
+    }
+    .generalContainer{
+        padding: 0;
+        margin: 0 auto;
+        float: unset; 
+        height: 100%; 
+        width: 100%;
+    }
+    .containerPic{
+        position: sticky;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    
+
+
+
+  }
