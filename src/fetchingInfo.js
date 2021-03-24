@@ -2,12 +2,13 @@ import { getCityApi } from './utils';
 
 const clientCountry = async () => {
   try {
-    const data = await fetch('https://ip-api.com/json', { mode: 'cors' });
+    const data = await fetch('https://ipapi.co/json', { mode: 'cors' });
     const response = await data.json();
+    console.log(response);
     return response.city;
   } catch (data) {
     console.log('Request failed', data);
-    return 'Rome';
+    return 'Paris';
   }
 };
 
