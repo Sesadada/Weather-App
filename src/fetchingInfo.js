@@ -1,4 +1,5 @@
-import { getCityApi } from './utils';
+import { getCityApi, placeHolder } from './utils';
+import { img } from './dom';
 
 const clientCountry = async () => {
   try {
@@ -50,6 +51,8 @@ const googleImage = async (loc) => {
     return data;
   } catch (err) {
     console.log('rejected', err);
+    img.src = `${placeHolder['placeholder.jpg']}`;
+
     return err;
   }
 };

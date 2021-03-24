@@ -39,10 +39,12 @@ const buildingDom = (city, local) => {
       body.style.backgroundImage = `url('${decider(timeDef, sunrise, sunset, offSet)[`${newDes}.jpg`]}')`;
     }).catch((err) => console.log('err', err));
     googleImage(city).then((im) => {
-      img.src = im.photos[0].image.web;
+      console.log(im.status);
+      img.src = im.status === 404 ? img.src = `${placeHolder['placeholder.jpg']}`
+        : im.photos[0].image.web;
     }).catch((err) => {
-      console.log(err);
       img.src = `${placeHolder['placeholder.jpg']}`;
+      console.log(err);
     });
   });
 };
