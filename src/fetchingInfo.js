@@ -2,7 +2,7 @@ import { getCityApi } from './utils';
 
 const clientCountry = async () => {
   try {
-    const data = await fetch('https://ip-api.com/json', { mode: 'cors' });
+    const data = await fetch('http://ip-api.com/json', { mode: 'cors' });
     const response = await data.json();
     return response.city;
   } catch (data) {

@@ -4,7 +4,7 @@ const farToC = (num) => ((num - 32) * (5 / 9)).toFixed(2);
 
 const CenToF = (num) => ((num * (9 / 5) + 32)).toFixed(2);
 
-const getCityApi = (x) => `http://api.openweathermap.org/data/2.5/weather?q=${x}&units=metric&appid=eadfc0930f2a58b518778194a8e7f4cf `;
+const getCityApi = (x) => `https://api.openweathermap.org/data/2.5/weather?q=${x}&units=metric&appid=eadfc0930f2a58b518778194a8e7f4cf `;
 
 const whichT = (country, t) => (country === 'US' ? `Temperature: ${CenToF(t)} F` : `Temperature: ${t} C`);
 
