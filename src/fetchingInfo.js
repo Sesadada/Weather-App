@@ -3,7 +3,7 @@ import { getCityApi } from './utils';
 
 const clientCountry = async () => {
   try {
-    const data = await fetch('http://ip-api.com/json');
+    const data = await fetch('https://ip-api.com/json');
     const response = await data.json();
     return response.city;
   } catch (data) {
@@ -15,7 +15,7 @@ const clientCountry = async () => {
 const fetchTime = async (lat, lon) => {
   try {
     const timeApi = 'X7LQY2PG947X';
-    const queryAdd = `http://api.timezonedb.com/v2.1/get-time-zone?key=${timeApi}&format=json&by=position&lat=${lat}&lng=${lon}`;
+    const queryAdd = `https://api.timezonedb.com/v2.1/get-time-zone?key=${timeApi}&format=json&by=position&lat=${lat}&lng=${lon}`;
     const response = await fetch(queryAdd, { mode: 'cors' });
     const data = await response.json();
     return data;
