@@ -16,7 +16,7 @@ const buildingDom = (city, local) => {
     const newDes = weatherDes.replace(/\s/g, '-');
     const weatherIcon = info.weather[0].icon;
     desDom.textContent = weatherDes;
-    const iconUrl = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
+    const iconUrl = `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
     wIcon.src = iconUrl;
     const cityLon = info.coord.lon;
     const cityLat = info.coord.lat;

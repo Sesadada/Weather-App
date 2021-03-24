@@ -1,9 +1,8 @@
 import { getCityApi } from './utils';
-// import { img } from './dom';
 
 const clientCountry = async () => {
   try {
-    const data = await fetch('https://ip-api.com/json');
+    const data = await fetch('https://ip-api.com/json', { mode: 'cors' });
     const response = await data.json();
     return response.city;
   } catch (data) {
@@ -24,7 +23,7 @@ const fetchTime = async (lat, lon) => {
     return err;
   }
 };
-// http://api.timezonedb.com/v2.1/get-time-zone?key=X7LQY2PG947X&format=json&by=position&lat=40.689247&lng=-74.044502
+
 const fetching = async (city) => {
   try {
     const response = await fetch(getCityApi(city), { mode: 'cors' });
@@ -57,26 +56,3 @@ const googleImage = async (loc) => {
 export {
   clientCountry, fetching, googleImage, fetchTime,
 };
-
-/*
-const fetching = async (city) => {
-  try {
-    const response = await fetch(getCityApi(city), { mode: 'cors' });
-    const data = await response.json();
-    const cityName = data.name;
-    const countryCode = data.sys.country;
-    const countryData = lookup.byIso(`${countryCode}`);
-    const {
-      temp, feels_like: feelsLike, temp_min: tempMin, temp_max: tempMax, pressure, humidity,
-    } = data.main;
-
-    console.log(cityName, temp, feelsLike, tempMin, tempMax, pressure, humidity);
-    console.log(countryData.country);
-    return data;
-  } catch (err) {
-    console.log('rejected', err);
-    return err;
-  }
-};
-
-*/
